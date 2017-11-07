@@ -1,0 +1,152 @@
+\documentclass[11pt, oneside]{article}
+
+\usepackage{geometry}
+\geometry{letterpaper}
+
+\usepackage{tipa,vowel}
+\let\ipa\textipa
+\def\asp{\ipa{\super h}}
+
+\usepackage{multirow}
+
+\title{Sound System of the Ishiculu language}
+\author{Ming Zhang}
+\date{September 15, 2117}
+
+\begin{document}
+\maketitle
+
+\section[]{Phoneme inventory of Ishiculu\footnote{Pronounced [\ipa{\`IS\'I\super{N}|\v u:l\`u}]}}
+\begin{center}
+
+\begin{tabular}{|l|l|c|c|c|c|c|}
+\hline
+\multicolumn{2}{|c|}{} &
+Labial &
+Alveolar &
+Postalveolar &
+Palatal &
+Velar \\
+
+\hline
+\multirow{3}{*}{Stop} & voiced &
+b & \multicolumn{2}{c|}{d} & & \ipa{g} \\
+
+\cline{2-7}
+ & voiceless &
+p & \multicolumn{2}{c|}{t} & & k \\
+
+\cline{2-7}
+ & aspirated &
+\raisebox{-1pt}{p\asp} & \multicolumn{2}{c|}{\raisebox{-1pt}{t\asp}} & & \raisebox{-1pt}{k\asp} \\
+
+\hline
+\multicolumn{2}{|l|}{Nasal} &
+m & \multicolumn{2}{c|}{n} & \textltailn & \ipa{N} \\
+
+\hline
+\multicolumn{2}{|l|}{Trill} &
+& \multicolumn{2}{c|}{r} & & \\
+
+\hline
+\multirow{2}{*}{Fricative} & voiced &
+& & \ipa{Z} & & \ipa{G} \\
+
+\cline{2-7}
+& voiceless &
+f & s & \ipa{S} & & x \\
+
+\hline
+\multirow{2}{*}{Affricate} & voiced &
+& \raisebox{-1.5pt}{\ipa{\t{dz}}} & \raisebox{-1.5pt}{\ipa{\t{dZ}}} & & \\
+
+\cline{2-7}
+& voiceless &
+& \raisebox{-1.5pt}{\ipa{\t{ts}}} & \raisebox{-1.5pt}{\ipa{\t{tS}}} & & \\
+
+\hline
+\raisebox{-2pt}{Lateral} & voiced &
+& \multicolumn{2}{c|}{\textlyoghlig} & & \\
+
+\cline{2-7}
+\raisebox{1pt}{fricative} & voiceless &
+& \multicolumn{2}{c|}{\textbeltl} & & \\
+
+\hline
+\multicolumn{2}{|l|}{Approximant} &
+\ipa{V} & \multicolumn{2}{c|}{} & j & w \\
+
+\hline
+\multicolumn{2}{|l|}{Lateral approximant} &
+& \multicolumn{2}{c|}{l} & & \\
+
+\hline
+\multicolumn{2}{|l|}{Click} &
+& \multicolumn{2}{c|}{\ipa{\super N|}} & & \\
+
+\hline
+\end{tabular}
+\\[10pt]
+
+\begin{vowel}
+\putcvowel{i}{1}
+\putcvowel{\ipa{E}}{3}
+\putcvowel{a}{4}
+\putcvowel{\ipa{O}}{6}
+\putcvowel{\ipa{7}}{7}
+\putcvowel{u}{8}
+\end{vowel}
+
+\end{center}
+
+\section{Tones and stress}
+
+\subsection{Tone categories}
+
+Ishiculu has four tones.
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+Description & low & high & rising & falling \\
+\hline
+IPA diacritic & \ipa{\`a} & \ipa{\'a} & \ipa{\v a} & \ipa{\^a} \\
+\hline
+Tone contour & 11 & 55 & 35 & 51 \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Interactions between voiced stops and tones}
+
+Voiced stops in Ishiculu (i.e. /b/, /d/, and /\ipa g/) add a low-tone onset to the normal tone.
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+Normal tone & \ipa{\`a} (low) & \ipa{\'a} (high) & \ipa{\v a} (rising) & \ipa{\^a} (falling) \\
+\hline
+New tone & \ipa{b\`a} (low) & \ipa{b\v a} (rising) & \ipa{b\v a} (rising) & \ipa{b\textrisefall{a}} (rising-falling) \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Stress}
+The stress of an Ishiculu word falls on the penultimate syllable and results in lengthening of the vowel. For example:
+\begin{center}
+\begin{tabular}{rcl}
+Ishiculu & /\ipa{i.Si.\super N|u.lu}/ & [\ipa{iSi\super N|u:lu}] \\
+unjani & /\ipa{u.\textltailn\t{dZ}a.ni}/ & [\ipa{u\textltailn\t{dZ}a:ni}] \\
+\end{tabular}
+\end{center}
+
+\section{Syllable structure}
+Possible syllable structures in Ishiculu are (C)V and N\textsubscript 1C\textsubscript 1V, where N\textsubscript 1 is a nasal with the same place of articulation as C\textsubscript 1. For example:
+\begin{center}
+\begin{tabular}{rcl}
+Ishiculu & /\ipa{i.Si.\super N|u.lu}/ & V.CV.CV.CV \\
+unjani & /\ipa{u.\textltailn\t{dZ}a.ni}/ & V.NCV.CV \\
+\end{tabular}
+\end{center}
+
+\end{document}

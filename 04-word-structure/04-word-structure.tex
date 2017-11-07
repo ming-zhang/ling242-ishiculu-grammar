@@ -1,0 +1,123 @@
+\documentclass[12pt, oneside]{article}
+
+\usepackage[margin=1.2in]{geometry}
+\geometry{letterpaper}
+\usepackage{tipa,vowel,gb4e}
+\let\ipa\textipa
+\let\eachwordone=\it
+
+\usepackage{multirow}
+
+\title{Morphology of the Ishiculu language}
+\author{Ming Zhang}
+\date{October 6, 2117}
+
+\begin{document}
+\maketitle
+
+Some glossing abbreviations used in this chapter are INT: interior, STA: static, CENTF: centrifugal, IMP: imperative, 7: Noun Class 7.
+
+Ishiculu exhibits highly synthetic verbal morphology. Prefixation and suffixation are responsible for marking the tense, the subject, and when applicable, the object of the verb. Ishiculu is mostly agglutinative in terms of its verb affixation: different grammatical features of the verb are expressed through different affixes, except for the person and the number, which are contained in the same prefix. On the other hand, the nominal morphology of Ishiculu is marginally synthetic, with nouns having only affixes for locative cases. Adjectives, pronouns, and conjunctions are completely analytic in Ishiculu.
+
+There are both inflectional and derivational affixes in Ishiculu, while most inflectional affixes are attached to verbs. Moreover, Ishiculu does not have the process of lexical composition, and all of its affixes are bound morphemes.
+
+A general structure of an Ishiculu verb consists of subject agreement, object agreement, stem, derivational suffixes, and tense, in this order. Ishiculu verbs agree with the subject and the direct and indirect objects, if any. The agreement with the subject and the direct object is presented through prefixation to verbs, while the agreement with the indirect object is expressed through suffixation. The same set of affixes is used for all three agreements.
+
+\begin{center}
+\begin{tabular}{c|l|l}
+\hline
+person & \multicolumn{1}{c|}{singular} & \multicolumn{1}{c}{plural} \\
+\hline
+1st & -ni-/-niw- & -tse-/-tsew- \\
+\hline
+2nd & -mbo-/-mboy- & -u-/-uy- \\
+\hline
+3rd & -ki-/-kiw- & -so-/-soy- \\
+\hline
+\end{tabular}
+\end{center}
+
+The form in each entry is used before a consonant or word-finally, and the second is used if the next syllable starts with a vowel. Following is an example of this morphophonological process.
+
+\begin{exe}
+\ex
+\gll Elly pa ki-so \ipa{nta\textbeltl o} kitabu. \\
+Elly not \textsc{3sg}-like \textsc{clf}.7 book(7) \\
+\trans `Elly doesn't read the book.'
+\ex
+\gll Elly pa kiw-ioani \ipa{nta\textbeltl o} kitabu. \\
+Elly not \textsc{3sg}-like \textsc{clf}.7 book(7) \\
+\trans `Elly doesn't like the book.'
+\end{exe}
+
+The suffix \textit{-\textbeltl a} mark the causative form of a verb. Accordingly, the causee of the causative verb is marked with an indirect object suffix after the causative suffix.
+
+\begin{exe}
+\ex
+\gll Fu-Philadelphia ni-hi-\ipa{\textbeltl}a-ki Elly \ipa{nta\textbeltl o} kitabu. \\
+in-Philadelphia \textsc{1sg}-hear-\textsc{caus}-\textsc{3sg} Elly \textsc{clf}.7 book(7) \\
+\trans `I (will) read the book to Elly.'
+\end{exe}
+
+Ishiculu has two tenses: present and past. The present tense is marked with a \textit{-\o} suffix, and can be used for future events. The past tense is marked with a \textit{-mbi} suffix.
+
+\begin{exe}
+\ex
+\gll {Tse-kiw-ioani-\o} \ipa{nta\textbeltl o} kitabu. \\
+\textsc{1pl}-\textsc{3sg}-like-\textsc{prs} \textsc{clf}.7 book(7) \\
+\trans `We (will) like the book.'
+\ex
+\gll Tse-kiw-ioani-mbi \ipa{nta\textbeltl o} kitabu. \\
+\textsc{1pl}-\textsc{3sg}-like-\textsc{pst} \textsc{clf}.7 book(7) \\
+\trans `We used to like the book.'
+\end{exe}
+
+The imperative can occur either alone or with an object prefix.
+
+\begin{tabular}{c|l|l}
+\hline
+& \multicolumn{1}{c|}{Alone} & \multicolumn{1}{c}{With object} \\
+\hline
+Singular & \textit{-a} & \textit{-e} \\
+\hline
+Plural & \textit{-ani} & \textit{-eni} \\
+\hline
+\end{tabular}
+
+\begin{exe}
+\ex
+\gll shi-a \\
+read\_aloud-\textsc{imp} \\
+\trans `Read aloud!'
+\ex
+\gll ki-shi-e \ipa{nta\textbeltl o} kitabu \\
+read\_aloud-\textsc{imp} \textsc{clf}.7 book(7) \\
+\trans `Read the book aloud!'
+\end{exe}
+
+Ishiculu nouns receive prefixes for the location of the locative case, and suffixes for the direction of any movement involved.
+
+\begin{center}
+\begin{tabular}{l|l|l|l}
+\hline
+ & \textit{-\o}: static & \textit{-ts\ipa{O}}: centrifugal & \textit{-\ipa{Zu}}: centripetal \\
+\hline
+\textit{fu-}: interior & `in, at, inside' & `out of' & `into' \\
+\hline
+\textit{ts\ipa{7}-}: surface & `on the surface of' & `off the surface of' & `onto the surface of' \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{exe}
+\ex
+\gll {Fu-Philadelphia-\o} tse-ke-\ipa{\textbeltl}a-ki Elly \ipa{nta\textbeltl o} kitabu. \\
+\textsc{int}-Philadelphia-\textsc{sta} \textsc{1sg}-have-\textsc{caus}-\textsc{3sg} Elly \textsc{clf}.7 book(7) \\
+\trans `We will give Elly the book in Philadelphia.'
+\ex
+\gll Elly fu-Philadelphia-tso. \\
+Elly \textsc{int}-Philadelphia-\textsc{centf} \\
+\trans `Elly is from Philadelphia.'
+\end{exe}
+
+\end{document}

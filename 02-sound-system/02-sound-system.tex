@@ -3,6 +3,8 @@
 \usepackage{geometry}
 \geometry{letterpaper}
 
+\usepackage{textcomp}
+
 \usepackage{tipa,vowel}
 \let\ipa\textipa
 \def\asp{\ipa{\super h}}
@@ -30,7 +32,7 @@ Velar \\
 
 \hline
 \multirow{3}{*}{Stop} & voiced &
-b & \multicolumn{2}{c|}{d} & & \ipa{g} \\
+b & \multicolumn{2}{c|}{d} & & \ipa{g} \textlangle g\textrangle \\
 
 \cline{2-7}
  & voiceless &
@@ -38,11 +40,11 @@ p & \multicolumn{2}{c|}{t} & & k \\
 
 \cline{2-7}
  & aspirated &
-\raisebox{-1pt}{p\asp} & \multicolumn{2}{c|}{\raisebox{-1pt}{t\asp}} & & \raisebox{-1pt}{k\asp} \\
+\raisebox{-1pt}{p\asp\ \textlangle ph\textrangle} & \multicolumn{2}{c|}{\raisebox{-1pt}{t\asp\ \textlangle th\textrangle}} & & \raisebox{-1pt}{k\asp\ \textlangle kh\textrangle} \\
 
 \hline
 \multicolumn{2}{|l|}{Nasal} &
-m & \multicolumn{2}{c|}{n} & \textltailn & \ipa{N} \\
+m & \multicolumn{2}{c|}{n} & \textltailn\ \textlangle gn\textrangle & \ipa{N}\ \textlangle ng\textrangle \\
 
 \hline
 \multicolumn{2}{|l|}{Trill} &
@@ -50,19 +52,19 @@ m & \multicolumn{2}{c|}{n} & \textltailn & \ipa{N} \\
 
 \hline
 \multirow{2}{*}{Fricative} & voiced &
-& & \ipa{Z} & & \ipa{G} \\
+& & \ipa{Z}\ \textlangle zh\textrangle & & \ipa{G}\ \textlangle gh\textrangle \\
 
 \cline{2-7}
 & voiceless &
-f & s & \ipa{S} & & x \\
+f & s & \ipa{S}\ \textlangle sh\textrangle & & x \textlangle h\textrangle \\
 
 \hline
 \multirow{2}{*}{Affricate} & voiced &
-& \raisebox{-1.5pt}{\ipa{\t{dz}}} & \raisebox{-1.5pt}{\ipa{\t{dZ}}} & & \\
+& \raisebox{-1.5pt}{\ipa{\t{dz}}} \textlangle dz\textrangle & \raisebox{-1.5pt}{\ipa{\t{dZ}}} \textlangle j\textrangle & & \\
 
 \cline{2-7}
 & voiceless &
-& \raisebox{-1.5pt}{\ipa{\t{ts}}} & \raisebox{-1.5pt}{\ipa{\t{tS}}} & & \\
+& \raisebox{-1.5pt}{\ipa{\t{ts}}} \textlangle ts\textrangle & \raisebox{-1.5pt}{\ipa{\t{tS}}} \textlangle ch\textrangle & & \\
 
 \hline
 \raisebox{-2pt}{Lateral} & voiced &
@@ -74,7 +76,7 @@ f & s & \ipa{S} & & x \\
 
 \hline
 \multicolumn{2}{|l|}{Approximant} &
-\ipa{V} & \multicolumn{2}{c|}{} & j & w \\
+\ipa{V} & \multicolumn{2}{c|}{} & j \textlangle y\textrangle & w \\
 
 \hline
 \multicolumn{2}{|l|}{Lateral approximant} &
@@ -82,7 +84,7 @@ f & s & \ipa{S} & & x \\
 
 \hline
 \multicolumn{2}{|l|}{Click} &
-& \multicolumn{2}{c|}{\ipa{\super N|}} & & \\
+& \multicolumn{2}{c|}{\ipa{\super N|} \textlangle c\textrangle} & & \\
 
 \hline
 \end{tabular}
@@ -90,9 +92,9 @@ f & s & \ipa{S} & & x \\
 
 \begin{vowel}
 \putcvowel{i}{1}
-\putcvowel{\ipa{E}}{3}
+\putcvowel{\ipa{E}\ \textlangle e\textrangle }{3}
 \putcvowel{a}{4}
-\putcvowel{\ipa{O}}{6}
+\putcvowel{\ipa{O}\ \textlangle o\textrangle }{6}
 \putcvowel{\ipa{7}}{7}
 \putcvowel{u}{8}
 \end{vowel}

@@ -20,9 +20,13 @@
 \usepackage{textcomp}
 \usepackage{multirow}
 
-\usepackage{tipa,vowel}
+\usepackage{tipa,vowel,gb4e}
 \let\ipa\textipa
 \def\asp{\ipa{\super h}}
+\let\eachwordone=\normalfont
+\let\eachwordtwo=\normalfont
+
+\newcommand{\exsc}[1]{{\footnotesize\MakeUppercase{#1}}}
 
 % There are many different themes available for Beamer. A comprehensive
 % list with examples is given here:
@@ -110,11 +114,11 @@
 
 % Section and subsections will appear in the presentation overview
 % and table of contents.
-\section{Phonology}
+%\section{Phonology}
 
 %\subsection{First Subsection}
 
-\begin{frame}{Phonology}
+\begin{frame}{Consonant inventory}
 
 \begin{tabular}{|l|l|c|c|c|c|c|}
 \hline
@@ -186,32 +190,68 @@ f & s & \ipa{S}\ \textlangle sh\textrangle & & x \textlangle h\textrangle \\
 
 \end{frame}
 
-\subsection{Second Subsection}
+\begin{frame}{Vowel inventory}
+\begin{vowel}
+\putcvowel{i}{1}
+\putcvowel{\ipa{E}\ \textlangle e\textrangle }{3}
+\putcvowel{a}{4}
+\putcvowel{\ipa{O}\ \textlangle o\textrangle }{6}
+\putcvowel{\ipa{7}}{7}
+\putcvowel{u}{8}
+\end{vowel}
+\end{frame}
+
+\begin{frame}{Phonology}
+\begin{itemize}
+\item Syllable structure: either (C)V or N\textsubscript{1}C\textsubscript{1}V
+\pause
+\item Tonal with four tonemes
+\end{itemize}
+\end{frame}
+
+%\subsection{Second Subsection}
 
 % You can reveal the parts of a slide one at a time
 % with the \pause command:
-\begin{frame}{Second Slide Title}
+\begin{frame}{Noun classes; morphology}
   \begin{itemize}
-  \item {
-    First item.
-    \pause % The slide will pause after showing the first item
+  \item Eight noun classes
+  \pause
+  \item Highly synthetic verbal morphology
+  \begin{itemize}
+  \item {Nom. - dat. - acc. - \textsurd\ - derivational - tense
+    \begin{exe}
+    \sn
+    \gll Ba-ngiw-i -\textit{nde}-\textbeltl a-mbi nta u. \\
+    \exsc{1.pl}-\exsc{1sg}-\exsc{4.pl} -eat-\exsc{caus}-\exsc{pst} three \exsc{clf.4} \\
+    \trans ``They fed me three (blocks of cheese, say).''
+    \end{exe}
   }
-  \item {   
-    Second item.
-  }
-  % You can also specify when the content should appear
-  % by using <n->:
-  \item<3-> {
-    Third item.
-  }
-  \item<4-> {
-    Fourth item.
-  }
-  % or you can use the \uncover command to reveal general
-  % content (not just \items):
-  \item<5-> {
-    Fifth item. \uncover<6->{Extra text in the fifth item.}
-  }
+  \end{itemize}
+  \item No overt cases for nouns/pronouns \\
+  \begin{center}
+\begin{tabular}{c|c|c}
+\hline
+Pers. pron. & singular & plural \\
+\hline
+\hline
+1st person & mina & thina \\
+\hline
+2nd person & wena & nina \\
+\hline
+CL 1/2 & yena & bona \\
+\hline
+CL 3/4 & wona & yona \\
+\hline
+CL 5/6 & lona & wona \\
+\hline
+CL 7/8 & sona & \ipa{Z}ona \\
+\hline
+\end{tabular}
+\end{center}
+
+  \item Both 
+  
   \end{itemize}
 \end{frame}
 

@@ -26,7 +26,11 @@
 \let\eachwordone=\normalfont
 \let\eachwordtwo=\normalfont
 
-\newcommand{\exsc}[1]{{\footnotesize\MakeUppercase{#1}}}
+\usepackage{xcolor}
+
+\usepackage{tikz}
+
+\newcommand{\exsc}[1]{{\tiny\MakeUppercase{#1}}}
 
 % There are many different themes available for Beamer. A comprehensive
 % list with examples is given here:
@@ -112,11 +116,240 @@
 %  % You might wish to add the option [pausesections]
 %\end{frame}
 
-% Section and subsections will appear in the presentation overview
-% and table of contents.
-%\section{Phonology}
+\begin{frame}{Phonology}
+\begin{itemize}
+\item 31 consonants, including: \ipa{\super N|}; no uvular/glottal; \ipa{d}/\ipa{t}/\ipa{t}\asp; no v/z
+\item 
+Six vowels, with ``moderately high'' consonant-vowel ratio
+\begin{vowel}
+\putcvowel{i}{1}
+\putcvowel{\ipa{E}\ \textlangle e\textrangle }{3}
+\putcvowel{a}{4}
+\putcvowel{\ipa{O}\ \textlangle o\textrangle }{6}
+\putcvowel{\ipa{7}}{7}
+\putcvowel{u}{8}
+\end{vowel}
+\pause
+\item Syllable structure: either (C)V or N\textsubscript{1}C\textsubscript{1}V
+\pause
+\item Tonal with four tonemes
+\end{itemize}
+\end{frame}
 
-%\subsection{First Subsection}
+%\subsection{Second Subsection}
+
+% You can reveal the parts of a slide one at a time
+% with the \pause command:
+\begin{frame}{Noun classes; morphology; word order}
+  \begin{itemize}
+  \item Eight noun classes
+  \pause
+  \item Synthetic verbal morphology; no overt case morphology on pro/nouns
+  \begin{itemize}
+  \item Nom. - dat. - acc. - \textsurd\ - derivational - tense
+  \end{itemize}
+  {\scriptsize
+    \begin{exe}
+    \sn
+    \gll \textcolor{blue}{Bona} ba-ngiw-i -nde-\textbeltl a-mbi \textcolor{blue}{mina} nta u. \textcolor{blue}{Mina} ngi-ba-i -nde-\textbeltl a-mbi \textcolor{blue}{bona} nta u. \\
+    \exsc{pron.1.pl} \exsc{1.pl}-\exsc{1sg}-\exsc{4.pl} -eat-\exsc{caus}-\exsc{pst} \exsc{pron.1sg} three \exsc{clf.4} \exsc{pron.1sg} \exsc{1sg}-\exsc{1.pl}-\exsc{4.pl} -eat-\exsc{caus}-\exsc{pst} \exsc{pron.1.pl} three \exsc{clf.4} \\
+    \trans `They fed me three (blocks of cheese, say). I fed them three.'
+    \end{exe}
+  }
+\pause
+\item Basic word order SVO
+\item Topicalization of the object
+{\scriptsize
+\begin{exe}
+\sn
+\gll {Ntoch\textramshorns} ngi-zhi-ke (nta) \textcolor{blue}{a\textlyoghlig o}. \\
+cars(8) \exsc{1sg}-\exsc{8.pl}-have three \exsc{clf.8} \\
+\trans `Cars, I have (three).'
+\end{exe}
+}
+\pause
+\item Locative expressions
+{\scriptsize
+\begin{exe}
+\sn
+\gll Ts\textramshorns-nji-tso \textbeltl i-huma i\textlyoghlig i ika. \\
+\exsc{prep.sur}-table-\exsc{post.abl} \exsc{3sg}-jump \exsc{clf}.6 cat(6) \\
+\trans `Off the table jumps a cat.'
+\end{exe}
+}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Classifiers}
+
+{\scriptsize
+\begin{exe}
+\sn
+\gll Ngiw-u-nde-mbi shidzi. \\
+\exsc{1sg}-\exsc{4.sg}-eat-\exsc{pst} cheese(4) \\
+\trans `I ate cheese.'
+\sn
+\gll Ngi-zhiy-ioani kitabu. \\
+\exsc{1sg}-\exsc{7.pl}-like book(7) \\
+\trans `I like books.'
+\end{exe}
+}
+\pause
+{\scriptsize
+\begin{exe}
+\sn
+\gll Ngi-zhi-ke \textcolor{red}{nta} \textcolor{blue}{nta\textbeltl o} kitabu. \\
+\exsc{1sg}-\exsc{7.pl}-have three \exsc{clf.7} book(7) \\
+\trans `I have three books.'
+\end{exe}
+}
+\pause
+{\scriptsize
+\begin{exe}
+\sn
+\gll Ngiw-u-nde-mbi \textcolor{blue}{u} shidzi \textcolor{red}{ce-John}. \\
+\exsc{1sg}-\exsc{4.sg}-eat-\exsc{pst} \exsc{clf.4} cheese(4) \exsc{gen}-John \\
+\trans `I ate John's cheese.'
+\sn
+\gll Ngiw-u-nde-mbi \textcolor{red}{ligha} \textcolor{blue}{u} shidzi. \\
+\exsc{1sg}-\exsc{4.sg}-eat-\exsc{pst} this \exsc{clf.4} cheese(4) \\
+\trans `I ate this cheese.'
+\sn
+\gll Ngiw-u-nde-mbi \textcolor{blue}{u} shidzi \textcolor{red}{uw-uw-ioani} \textcolor{red}{wona}. \\
+\exsc{1sg}-\exsc{4.sg}-eat-\exsc{pst} \exsc{clf.4} cheese(4) \exsc{2sg}-\exsc{4.sg}-like \exsc{prn.4.sg} \\
+\trans `I ate the cheese that you like.'
+\end{exe}
+}
+\end{frame}
+
+\begin{frame}{Valence changing}
+\begin{itemize}
+\item Causative
+{\scriptsize
+\begin{exe}
+\sn
+\gll Ngi-ka-shi-so-\textcolor{blue}{\textbeltl a} Ari \ipa{nta\textbeltl o} kitabu. \\
+\exsc{1sg}-\exsc{1.sg}-\exsc{7.sg}-read-\exsc{caus} Ari \exsc{clf}.7 book(7) \\
+\trans `I (will) make Ari read the book.'
+\end{exe}
+}
+\pause
+\begin{itemize}
+\item Prototypical verbs in Ishiculu are transitive at most.
+{\scriptsize
+\begin{exe}
+\sn
+\gll Fu-Philadelphia ngi-ka-shi-ke-\textcolor{blue}{\textbeltl a}-mbi Ari \ipa{nta\textbeltl o} kitabu. \\
+in-Philadelphia \exsc{1sg}-\exsc{1.sg}-\exsc{7.sg}-have-\exsc{caus}-\exsc{pst} Ari \exsc{clf}.7 book(7) \\
+\trans `I gave Ari the book in Philadelphia.'
+\end{exe}
+}
+\end{itemize}
+\pause
+\item Passive
+{\scriptsize
+\begin{exe}
+\sn
+\gll Nta\textbeltl o kitabu shi-so-\textcolor{blue}{\ipa{wal7}}-mbi. \\
+\exsc{clf}.7 book(7) \exsc{7.sg}-read-\exsc{pass}-\exsc{pst}  \\
+\trans `The book was read.'
+\end{exe}
+}
+\pause
+\begin{itemize}
+\item
+The agent is then ineffable.
+{\scriptsize
+\begin{exe}
+\sn
+\gll * Nta\textbeltl o kitabu shi-ngi-so-{\ipa{wal7}}-mbi mina. \\
+{} \exsc{clf}.7 book(7) \exsc{7.sg}-\exsc{1sg}-read-\exsc{pass}-\exsc{pst} \exsc{pron.1sg} \\
+\trans Intended meaning: `The book was read by me.'
+\end{exe}
+}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Passive of causative}
+\begin{itemize}
+\item Causee is promoted directly.
+{\scriptsize
+\begin{exe}
+\sn
+\gll U-ko -me\textbeltl i-\textcolor{blue}{\textbeltl a-wal\textramshorns}-mbi ishi hehe. \\
+\exsc{2sg}-\exsc{5.sg} -receive-\exsc{caus}-\exsc{pass}-\exsc{pst} \exsc{clf.5} cake(5) \\
+\trans `You were sent a cake.'
+\end{exe}
+}
+\pause
+\item Object needs to be promoted to the causee position first.
+{\scriptsize
+\begin{exe}
+\sn
+\gll Nta\textbeltl o kitabu shi-ke-\textcolor{blue}{wal\textramshorns-\textbeltl a-wal\textramshorns}. \\
+\exsc{clf.7} book(7) \exsc{7.sg}-have-\exsc{pass}-\exsc{caus}-\exsc{pass} \\
+\trans `The book is given.'
+\end{exe}
+}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Relative clauses}
+
+Primary strategy relativizes subject
+{\scriptsize
+\begin{exe}
+\sn
+\gll Ngiw-uw-ioani meyi {sh\textramshorns} u-ka-shi-ke-\textbeltl a-mbi Ari nta\textbeltl o kitabu. \\
+{\tiny 1SG}-{\tiny 3.SG}-like {\tiny CLF.3} teacher(3) {\tiny 3.SG}-{\tiny 1.SG}-{\tiny 7.SG}-have-{\tiny CAUS}-{\tiny PST} Ari {\tiny CLF.7} book(7) \\
+\trans `I like the teacher that gave Ari the book.'
+\end{exe}
+}
+\pause
+Direct objects need to be passivized
+{\scriptsize
+\begin{exe}
+\sn
+\gll * Ngiw-shiy-ioani nta\textbeltl o kitabu meyi {sh\textramshorns} u-so-mbi. \\
+{} {\tiny 1SG}-{\tiny 7.SG}-like {\tiny CLF.7} book(7) {\tiny CLF.3} teacher(3) {\tiny 3.SG}-read-{\tiny PST} \\
+\trans Intended meaning: `I like the book that the teacher read.'
+\sn
+\gll Ngiw-shiy-ioani nta\textbeltl o kitabu u-so-wal\textramshorns-mbi. \\
+{\tiny 1SG}-{\tiny 7.SG}-like {\tiny CLF.7} book(7) {\tiny 3.SG}-read-{\tiny PASS}-{\tiny PST} \\
+\trans `I like the book that was read.'
+\end{exe}
+}
+Resumptive pronouns
+{\scriptsize
+\begin{exe}
+\sn
+\gll Ngiw-shiy-ioani nta\textbeltl o kitabu meyi {sh\textramshorns} u-so-mbi \textcolor{blue}{sona}. \\
+{\tiny 1SG}-{\tiny 7.SG}-like {\tiny CLF.7} book(7) {\tiny CLF.3} teacher(3) {\tiny 3.SG}-read-{\tiny PST} {\tiny PRN.7.SG} \\
+\trans `I like the book that the teacher read.'
+\end{exe}
+}
+\end{frame}
+
+\begin{frame}[c]
+\Huge Questions? Comments?
+\end{frame}
+
+\end{document}
+
+
+
+\begin{frame}{History}
+\begin{figure}
+\begin{tikzpicture} 
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=1\textwidth]{map.png}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw[->,red,ultra thick] (0.755,0.605) to [out=180,in=60] (0.49,0.22);
+    \end{scope}
+\end{tikzpicture}
+\caption{Migration of Chinese people to South Africa in the 2030s}
+\end{figure}
+\end{frame}
 
 \begin{frame}{Consonant inventory}
 
@@ -138,7 +371,7 @@ b & \multicolumn{2}{c|}{d} & & \ipa{g} \textlangle g\textrangle \\
 p & \multicolumn{2}{c|}{t} & & k \\
 
 \cline{2-7}
- & aspirated &
+ & \textcolor{blue}{aspirated} &
 \raisebox{-1pt}{p\asp\ \textlangle ph\textrangle} & \multicolumn{2}{c|}{\raisebox{-1pt}{t\asp\ \textlangle th\textrangle}} & & \raisebox{-1pt}{k\asp\ \textlangle kh\textrangle} \\
 
 \hline
@@ -183,152 +416,9 @@ f & s & \ipa{S}\ \textlangle sh\textrangle & & x \textlangle h\textrangle \\
 
 \hline
 \multicolumn{2}{|l|}{Click} &
-& \multicolumn{2}{c|}{\ipa{\super N|} \textlangle c\textrangle} & & \\
+& \multicolumn{2}{c|}{\textcolor{blue}{\ipa{\super N|}} \textlangle c\textrangle} & & \\
 
 \hline
 \end{tabular}
 
 \end{frame}
-
-\begin{frame}{Vowel inventory}
-\begin{vowel}
-\putcvowel{i}{1}
-\putcvowel{\ipa{E}\ \textlangle e\textrangle }{3}
-\putcvowel{a}{4}
-\putcvowel{\ipa{O}\ \textlangle o\textrangle }{6}
-\putcvowel{\ipa{7}}{7}
-\putcvowel{u}{8}
-\end{vowel}
-\end{frame}
-
-\begin{frame}{Phonology}
-\begin{itemize}
-\item Syllable structure: either (C)V or N\textsubscript{1}C\textsubscript{1}V
-\pause
-\item Tonal with four tonemes
-\end{itemize}
-\end{frame}
-
-%\subsection{Second Subsection}
-
-% You can reveal the parts of a slide one at a time
-% with the \pause command:
-\begin{frame}{Noun classes; morphology}
-  \begin{itemize}
-  \item Eight noun classes
-  \pause
-  \item Highly synthetic verbal morphology
-  \begin{itemize}
-  \item {Nom. - dat. - acc. - \textsurd\ - derivational - tense
-    \begin{exe}
-    \sn
-    \gll Ba-ngiw-i -\textit{nde}-\textbeltl a-mbi nta u. \\
-    \exsc{1.pl}-\exsc{1sg}-\exsc{4.pl} -eat-\exsc{caus}-\exsc{pst} three \exsc{clf.4} \\
-    \trans ``They fed me three (blocks of cheese, say).''
-    \end{exe}
-  }
-  \end{itemize}
-  \item No overt cases for nouns/pronouns \\
-  \begin{center}
-\begin{tabular}{c|c|c}
-\hline
-Pers. pron. & singular & plural \\
-\hline
-\hline
-1st person & mina & thina \\
-\hline
-2nd person & wena & nina \\
-\hline
-CL 1/2 & yena & bona \\
-\hline
-CL 3/4 & wona & yona \\
-\hline
-CL 5/6 & lona & wona \\
-\hline
-CL 7/8 & sona & \ipa{Z}ona \\
-\hline
-\end{tabular}
-\end{center}
-
-  \item Both 
-  
-  \end{itemize}
-\end{frame}
-
-\section{Second Main Section}
-
-\subsection{Another Subsection}
-
-\begin{frame}{Blocks}
-\begin{block}{Block Title}
-You can also highlight sections of your presentation in a block, with it's own title
-\end{block}
-\begin{theorem}
-There are separate environments for theorems, examples, definitions and proofs.
-\end{theorem}
-\begin{example}
-Here is an example of an example block.
-\end{example}
-\end{frame}
-
-% Placing a * after \section means it will not show in the
-% outline or table of contents.
-\section*{Summary}
-
-\begin{frame}{Summary}
-  \begin{itemize}
-  \item
-    The \alert{first main message} of your talk in one or two lines.
-  \item
-    The \alert{second main message} of your talk in one or two lines.
-  \item
-    Perhaps a \alert{third message}, but not more than that.
-  \end{itemize}
-  
-  \begin{itemize}
-  \item
-    Outlook
-    \begin{itemize}
-    \item
-      Something you haven't solved.
-    \item
-      Something else you haven't solved.
-    \end{itemize}
-  \end{itemize}
-\end{frame}
-
-
-
-% All of the following is optional and typically not needed. 
-\appendix
-\section<presentation>*{\appendixname}
-\subsection<presentation>*{For Further Reading}
-
-\begin{frame}[allowframebreaks]
-  \frametitle<presentation>{For Further Reading}
-    
-  \begin{thebibliography}{10}
-    
-  \beamertemplatebookbibitems
-  % Start with overview books.
-
-  \bibitem{Author1990}
-    A.~Author.
-    \newblock {\em Handbook of Everything}.
-    \newblock Some Press, 1990.
- 
-    
-  \beamertemplatearticlebibitems
-  % Followed by interesting articles. Keep the list short. 
-
-  \bibitem{Someone2000}
-    S.~Someone.
-    \newblock On this and that.
-    \newblock {\em Journal of This and That}, 2(1):50--100,
-    2000.
-  \end{thebibliography}
-\end{frame}
-
-\end{document}
-
-

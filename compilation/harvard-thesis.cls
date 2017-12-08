@@ -26,6 +26,7 @@
     urlcolor=Crimson,
 }
 
+\RequirePackage{tipa}
 \RequirePackage[centertags]{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage[numbers, comma, sort&compress]{natbib}
@@ -81,41 +82,41 @@
 \parindent 12pt
 \RequirePackage{mathspec}
 
-% use Arno Pro instead of standard LaTeX fonts
+% use CharisSIL instead of standard LaTeX fonts
 \setmathsfont(Digits,Latin,Greek)[
-Path = fonts/,Extension = .otf,
-UprightFont=ArnoPro-Regular,
-BoldFont=ArnoPro-Bold,
-ItalicFont=ArnoPro-Italic,
-BoldItalicFont=ArnoPro-BoldItalic,
-Numbers={OldStyle,Proportional}]{ArnoPro}
+Path = fonts/,Extension = .ttf,
+UprightFont=*-R,
+BoldFont=*-B,
+ItalicFont=*-I,
+BoldItalicFont=*-BI,
+Numbers={OldStyle,Proportional}]{CharisSIL}
 \setmathrm
-[Path = fonts/,Extension = .otf,
-UprightFont=ArnoPro-Regular,
-BoldFont=ArnoPro-Bold,
-ItalicFont=ArnoPro-Italic,
-BoldItalicFont=ArnoPro-BoldItalic
-]{ArnoPro}
+[Path = fonts/,Extension = .ttf,
+UprightFont=*-R,
+BoldFont=*-B,
+ItalicFont=*-I,
+BoldItalicFont=*-BI
+]{CharisSIL}
 
 \RequirePackage{xltxtra,xunicode}
 \defaultfontfeatures{Mapping=tex-text, Numbers=OldStyle}
 \aliasfontfeatureoption{Ligatures}{Historic}{Historical}
 \setromanfont
 [Path = fonts/,
-Extension = .otf,
+Extension = .ttf,
 Mapping=tex-text, 
 Numbers=OldStyle, 
 Ligatures={Common}, 
 SizeFeatures={%
-	{Size={-10}, Font=*-RegularCaption},
-	{Size={10-13.0}, Font=*},
-	{Size={13.01-19.9}, Font=*-RegularSubhead, Ligatures=Rare, Contextuals={Swash,Alternate}},
-	{Size={19.91-},Font=*-RegularDisplay, Ligatures=Rare, Contextuals={Swash,Alternate}}},
-UprightFont=ArnoPro-Regular,
-BoldFont=ArnoPro-Bold,
-ItalicFont=ArnoPro-Italic,
-BoldItalicFont=ArnoPro-BoldItalic
-]{ArnoPro} %
+	{Size={-10}, Font=*-R},
+	{Size={10-13.0}, Font=*-R},
+	{Size={13.01-19.9}, Font=*-R, Ligatures=Rare, Contextuals={Swash,Alternate}},
+	{Size={19.91-},Font=*-R, Ligatures=Rare, Contextuals={Swash,Alternate}}},
+UprightFont=*-R,
+BoldFont=*-B,
+ItalicFont=*-I,
+BoldItalicFont=*-BI
+]{CharisSIL} %
 			
 %Set fonts for Mac Specific (Comment out on Windows XP)
 %\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Helvetica Neue} 

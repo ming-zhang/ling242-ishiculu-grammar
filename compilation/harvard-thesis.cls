@@ -27,6 +27,7 @@
 }
 
 \RequirePackage{tipa}
+\RequirePackage{vowel}
 \RequirePackage[centertags]{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage[numbers, comma, sort&compress]{natbib}
@@ -47,7 +48,7 @@
 \renewcommand\listfigurename{Listing of figures}
 \raggedright
 
-\RequirePackage{pdfsync} %do pdf synchronization [andy]
+%\RequirePackage{pdfsync} %do pdf synchronization [andy]
 
 \usepackage[closeFloats, noSeparatorLine]{fltpage} %use the custom modified fltpage package
 \RequirePackage{afterpage} 
@@ -59,7 +60,7 @@
  
 
 
-\synctex=1 % turn synctex on automatically to sync between pdf viewer [andy]
+%\synctex=1 % turn synctex on automatically to sync between pdf viewer [andy]
 
 %   list an entire bibliography entry inline. Useful for acknowledging when my paper was previously published
 \RequirePackage{bibentry} 

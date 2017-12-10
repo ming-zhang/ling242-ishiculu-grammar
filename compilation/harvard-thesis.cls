@@ -45,7 +45,7 @@
 \renewcommand{\cftchapfont}{\normalsize \scshape}
 
 \renewcommand\bibname{References}
-\renewcommand\listfigurename{Listing of figures}
+%\renewcommand\listfigurename{Listing of figures}
 \raggedright
 
 %\RequirePackage{pdfsync} %do pdf synchronization [andy]

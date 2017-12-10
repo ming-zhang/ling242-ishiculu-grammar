@@ -26,6 +26,7 @@
     urlcolor=Crimson,
 }
 
+\RequirePackage{moresize}
 \RequirePackage{tipa}
 \RequirePackage{vowel}
 \RequirePackage[centertags]{amsmath}
@@ -41,7 +42,7 @@
 
 \RequirePackage{url}
 \RequirePackage[titles]{tocloft}
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 \renewcommand{\cftchapfont}{\normalsize \scshape}
 
 \renewcommand\bibname{References}
@@ -52,13 +53,6 @@
 
 \usepackage[closeFloats, noSeparatorLine]{fltpage} %use the custom modified fltpage package
 \RequirePackage{afterpage} 
-
-
-
-
-
- 
-
 
 %\synctex=1 % turn synctex on automatically to sync between pdf viewer [andy]
 
@@ -139,7 +133,7 @@ BoldItalicFont=*-BI
 	\singlespacing
 	\thispagestyle{empty}
 	\vspace*{\fill} \vspace{150pt} \begin{center}
-	\Huge \textcolor{Crimson}{\textit{\thetitle}} \normalsize \\ \sc \vspace{100pt}
+	\HUGE \textcolor{Crimson}{\textbf{\textit{\thetitle}}} \normalsize \\ \sc \vspace{100pt}
 	a grammar constructed \\ by\\
 	\theauthor\\% to\\ The \@department\\ 
 	\vspace{12pt}

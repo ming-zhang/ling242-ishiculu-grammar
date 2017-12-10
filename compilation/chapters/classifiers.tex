@@ -1,8 +1,9 @@
-\chapter{Classifiers}
+\chapter{Classifiers} \label{ch:classifiers}
 
-On WALS, there are 400 languages surveyed in the feature of numeral classifiers, and 140 of them have classifiers accompanying nouns when numerals are used. Among them, the three Chinese languages surveyed, Mandarin, Cantonese, and Hokkien all have numeral classifiers. Even though in traditional grammar, Zulu is not considered to have any classifier, the noun classes in Zulu fit nicely with the classifiers coming from Chinese languages, especially from Cantonese, where classifiers are more versatile, not just used with numerals. Ishiculu employs classifiers to company nouns when they refer to entities in a non-generic ways. The classifier modifying a noun is determined by the class of the modified noun.
+\newthought{Approximately 35\%} of world languages have numeral classifiers, among which are Mandarin and Cantonese \cite{wals-55}. Even though in traditional grammar, Zulu is not considered to have any classifier, the noun classes in Zulu fit nicely with the classifiers coming from Chinese languages, especially from Cantonese, where classifiers are more versatile outside of contexts with numerals. In Ishiculu, the classifier modifying a noun is determined by the class of the modified noun, shown in Table~\ref{table:classifiers:clf}
 
-\begin{center}
+\begin{table}
+\centering
 \begin{tabular}{c|c}
 \hline
 noun class & classifier \\
@@ -24,32 +25,17 @@ noun class & classifier \\
 8 & a\textlyoghlig o \\
 \hline
 \end{tabular}
-\end{center}
+\caption{Classifiers in Ishiculu.}
+\label{table:classifiers:clf}
+\end{table}
 
-When the noun is used generically instead of to refer to its instances, we don't use classifiers.
+When the noun is used generically instead of as reference to its instances, no classifier is used.
 
 \begin{exe}
 \ex
 \gll Ngi-u-nde-mbi shidzi. \\
-\textsc{1sg}-\textsc{4.sg}-eat-\textsc{pst} cheese(4) \\
+\textsc{1sg}-\textsc{cl4.sg}-eat-\textsc{pst} cheese(4) \\
 \trans `I ate cheese.'
-\end{exe}
-
-When the noun is specified, a classifier will need to accompany it.
-
-\begin{exe}
-\ex
-\gll Ngi-u-nde-mbi \textit{u} shidzi \textit{ce-John}. \\
-\textsc{1sg}-\textsc{4.sg}-eat-\textsc{pst} \textsc{clf.4} cheese(4) \textsc{gen}-John \\
-\trans `I ate John's cheese.'
-\ex
-\gll Ngi-u-nde-mbi \textit{ligha} \textit{u} shidzi. \\
-\textsc{1sg}-\textsc{4.sg}-eat-\textsc{pst} this \textsc{clf.4} cheese(4) \\
-\trans `I ate this cheese.'
-\ex
-\gll Ngi-u-nde-mbi \textit{u} shidzi \textit{uw-uw-ioani} \textit{wona}. \\
-\textsc{1sg}-\textsc{4.sg}-eat-\textsc{pst} \textsc{clf.4} cheese(4) \textsc{2sg}-\textsc{4.sg}-like \textsc{prn.4.sg} \\
-\trans `I ate the cheese that you like.'
 \end{exe}
 
 A classifier is required when a numeral modifies the noun.
@@ -57,6 +43,24 @@ A classifier is required when a numeral modifies the noun.
 \begin{exe}
 \ex
 \gll Ngi-zhi-ke \textit{nta} \textit{nta\textbeltl o} kitabu. \\
-\textsc{1sg}-\textsc{7.pl}-have three \textsc{clf.7} book \\
+\textsc{1sg}-\textsc{cl7.pl}-have three \textsc{clf.7} book \\
 \trans `I have three books.'
 \end{exe}
+
+Ishiculu employs classifiers to accompany nouns when they refer to entities in a non-generic ways. When the noun is specified in the following ways, a classifier is obligatory.
+
+\begin{exe}
+\ex Modified by a genitive
+\gll Ngiw-u-nde-mbi \textit{u} shidzi \textit{ce-John}. \\
+\textsc{1sg}-\textsc{cl4.sg}-eat-\textsc{pst} \textsc{clf.4} cheese(4) \textsc{gen}-John \\
+\trans `I ate John's cheese.'
+\ex Modified by a demonstrative
+\gll Ngiw-u-nde-mbi \textit{ligha} \textit{u} shidzi. \\
+\textsc{1sg}-\textsc{cl4.sg}-eat-\textsc{pst} this \textsc{clf.4} cheese(4) \\
+\trans `I ate this cheese.'
+\ex Modified by a relative clause
+\gll Ngiw-u-nde-mbi \textit{u} shidzi \textit{uw-uw-ioani} \textit{wona}. \\
+\textsc{1sg}-\textsc{cl4.sg}-eat-\textsc{pst} \textsc{clf.4} cheese(4) \textsc{2sg}-\textsc{cl4.sg}-like \textsc{prn.cl4.sg} \\
+\trans `I ate the cheese that you like.'
+\end{exe}
+
